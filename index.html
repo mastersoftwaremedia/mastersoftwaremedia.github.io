@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>My Portfolio Site</title>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+ <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,600,700' rel='stylesheet' type='text/css'>
+ <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+ <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+ <style>
+*  {
+	margin: 0 auto;
+	padding: 0;
+}
+html, body {
+	width: 100%;
+	height: 100%;
+}
+body {
+	font-family: 'Open Sans', arial, sans-serif;
+}
+a {
+	text-decoration: none;
+}
+nav {
+	width: 100%;
+	margin: 0 auto;
+	padding: 0;
+	background-color: #000000;
+	opacity: 0.5;
+	filter: (opacity=50);
+	position: fixed;
+	z-index: 99999999;
+	text-align: center;
+}
+nav ul {
+	list-style-type: none;
+	margin: 25px;
+}
+nav ul li {
+	display: inline;
+	padding: 25px;
+}
+nav ul li a {
+	color: #fff;
+	font-size: 16px;
+}
+nav ul li:hover {
+	background-color: #bac3a7;
+	transition: all 0.45;
+}
+
+.sect {
+	width: 100%;
+	height: 100%;
+}
+.sub-sect {
+	width: 100%;
+    height: 60%;
+}
+.sectOne {
+	background-image: url(images/bg5.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #24e6bf;
+}
+.sectTwo {
+	background-image: url(images/bg14.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #24e6bf;
+ 
+}
+.sectThree {
+	background-image: url(images/bg17.jpg);
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-color: #24e6bf;
+}
+.subsectOne {
+	background-color: #fff;
+}
+.subsectTwo {
+	background-color: #fff;
+}
+.subsectThree {
+	background-color: #24e6bf;
+	height: 10%;
+}
+#welcome {
+	padding: 24% 0;
+	text-align: center;
+}
+#welcome p {
+ font-size: 18px;
+}
+#about {
+	margin: 0 auto;
+	padding: 0;
+	color: #423c3c;
+	font-family: arial;
+}
+#about .left-Col {
+	width: 35%;
+	height: 60%;
+	float: left;
+}
+#about .left-Col img {
+	height: 200px;
+	margin-top: 40px;
+	text-align: center;
+}
+#about .left-Col h2 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+#about .right-Col {
+	width: 63%;
+	height: 60%;
+	float: right;
+
+	text-align: left;
+}
+#about .right-Col p.firstletter:first-line {
+	font-size: 2em;
+	color: black;
+}
+
+#skills {
+	margin: 0 auto;
+	padding: 0;
+	color: #423c3c;
+	font: inherit;
+}
+#skills .left-Col1{
+	width: 35%;
+	height: 60%;
+	float: left;
+}
+#skills .left-Col1 img{
+ height: 200px;
+ margin-top: 40px;
+ text-align: center;
+}
+#skills .left-Col1 h2 {
+	margin: 0 auto;
+	padding: 0;
+	text-align: center;
+}
+#skills .right-Col1 {
+width: 63%;
+height: 60%;
+float: right;
+text-align: center;
+}
+#skills .board ul {
+list-style-type: none;
+margin: 45px auto;
+text-align: center;
+}
+#skills .board ul li {
+display: inline;
+}
+#skills .board ul li img {
+ width: 100px;
+ height: 100px;
+ margin: 0 30px;
+}
+
+#portfolio .board ul {
+list-style-type: none;
+margin: 0 auto;
+text-align: center;
+padding: 4ess5px;
+}
+#portfolio .board ul li {
+display: inline;
+}
+#portfolio .board ul li img {
+ width: 250px;
+ height: 200px;
+ margin: 0 30px;
+}
+.coordination h1 {
+color: #ffff1a;
+font-weight: bold;
+text-align: center;
+}
+.coordination p {
+color: #ffff1a;
+font-size: 17px;
+text-align: center;
+}
+
+section {
+ margin: 0 auto;
+ padding: 0;
+}
+/* Set height of the grid so .sidenav can be 100% (adjust if needed) */
+    .row.content {height: 1500px}
+    
+/* Set gray background color and 100% height */
+    .sidenav {
+      background-color: #f1f1f1;
+      height: 100%;
+    }
+/* Set black background color, white text and some padding */
+    footer {
+      background-color: #555;
+      color: white;
+      padding: 15px;
+    }
+        
+</style>
+</head>
+
+<body>
+<nav>
+ <ul>
+  <li><a href="#welcome">Welcome</a></li>
+  <li><a href="#about">About</a></li>
+  <li><a href="#portfolio">Portfolio</a></li>
+  <li><a href="#skills">Skills</a></li>
+  <li><a href="#blog">Blog</a></li>
+ </ul>
+</nav>
+
+<div class="sect sectOne" id="welcome">
+	<h1>Welcome to my sweet place.</h1><br>
+	<p>Spreading the happiness through digital arts.</p><br>
+</div>
+
+<div class="sub-sect subsectOne" id="about">
+	<div class="left-Col">
+		<h2><img src="images/designlogo1-a.png" alt="Design Logo"></h2>	
+		<h2>About...</h2>
+	</div>
+	<div class="right-Col">
+		<p class="firstletter">I remember the time that I was taking art classes. Some people would paint first but, I had 
+		to do sketch first to paint on paper. When I do sketching, there is one thing that I can never forget to bring. An eraser. 
+		Otherwise, my painting would've looked really off. It worth every moment. 
+		Taking art classes made me realize that it is a very important to revise early on to make things look good to bring an idea into reality.</p>
+		
+		<p>Through painting, I also realized that I have an incredible talent
+that I've overlooked... which is creative artistic expressions that I can bring to life as well as problem solving skills. Now days, I love utilizing the 
+skills that I have with the digital world tools such as 
+HTML and CSS and jQuery. I love working in a digital world and I can't wait to be part of a team to work together with people to 
+bring more people from all over the world to enjoy staying online for everyday life.  
+ </p>
+	</div>
+</div>
+
+<div class="sect sectTwo" id="portfolio">
+	<div class="coordination">
+		<div class="board">
+			<ul>
+				<li><a href="" alt=""><img src="images/simplyausten.png" alt="HTML Skill"></a></li>
+				<li><a href="" alt=""><img src="images/resto.png" alt="CSS Skill"></a></li>
+				<li><a href="" alt=""><img src="images/drewgym.png" alt="jQuery Skill"></a></li>
+				<li><a href="" alt=""><img src="images/lewagon.png" alt="Bootstrap Skill"></a></li>
+			</ul>
+		</div>
+		<div class="board">
+			<ul>
+				<li><a href="" alt=""><img src="images/janeaustenfullbackground.png" alt="Python Skill"></a></li>
+				<li><a href="" alt=""><img src="images/broadwayproject.png" alt="PHP Skill"></a></li>
+				<li><a href="" alt=""><img src="images/loginformpg.png" alt="MySQL Skill"></a></li>
+
+			</ul>
+		</div>
+		<h1>Portfolio</h1>
+		<p>I focused on UI/UX and functionality on one page</p>
+	</div>
+</div>
+
+<div class="sub-sect subsectTwo" id="skills">
+	<div class="left-Col1">
+		<h2><img src="images/designlogo1-a.png" alt="Design Logo"></h2>
+		<h2>Skills</h2>
+	</div>
+	<div class="right-Col1">
+		<div class="board">
+			<ul>
+				<li><img src="images/logohtml.png" alt="HTML Skill"></li>
+				<li><img src="images/logocss3.png" alt="CSS Skill"></li>
+				<li><img src="images/logojq.png" alt="jQuery Skill"></li>
+				<li><img src="images/logoboo.png" alt="Bootstrap Skill"></li>
+			</ul>
+		</div>
+		<div class="board">
+			<ul>
+				<li><img src="images/logopython.jpg" alt="Python Skill"></li>
+				<li><img src="images/logophp.png" alt="PHP Skill"></li>
+				<li><img src="images/logomysql.png" alt="MySQL Skill"></li>
+				<li><img src="images/logocucumber2.png" alt="Cucumber Skill"></li>
+			</ul>
+		</div>
+	</div>
+</div>
+
+<div class="sect sectThree" id="empty"></div>
+<div class="sub-sect subsectThree" id="bar"></div>
+
+<section id="blog">
+<div class="container-fluid">
+  <div class="row content">
+    <div class="col-sm-3 sidenav">
+      <h4>Ynot?'s Blog</h4>
+      <ul class="nav nav-pills nav-stacked">
+        <li class="active"><a href="#section1">Home</a></li>
+        <li><a href="#section2">Friends</a></li>
+        <li><a href="#section3">Family</a></li>
+        <li><a href="#section3">Photos</a></li>
+      </ul><br>
+      <div class="input-group">
+        <input type="text" class="form-control" placeholder="Search Blog..">
+        <span class="input-group-btn">
+          <button class="btn btn-default" type="button">
+            <span class="glyphicon glyphicon-search"></span>
+          </button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-sm-9">
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>I Love Austen</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by Jane Dane, Sep 27, 2015.</h5>
+      <h5><span class="label label-danger">Food</span> <span class="label label-primary">Ipsum</span></h5><br>
+      <p>Food is my passion. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <br><br>
+      
+      <h4><small>RECENT POSTS</small></h4>
+      <hr>
+      <h2>Officially Blogging</h2>
+      <h5><span class="glyphicon glyphicon-time"></span> Post by John Doe, Sep 24, 2015.</h5>
+      <h5><span class="label label-success">Lorem</span></h5><br>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+      <hr>
+
+      <h4>Leave a Comment:</h4>
+      <form role="form">
+        <div class="form-group">
+          <textarea class="form-control" rows="3" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      <br><br>
+      
+      <p><span class="badge">2</span> Comments:</p><br>
+      
+      <div class="row">
+        <div class="col-sm-2 text-center">
+          <img src="images/loginmanimg.png" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>Anja <small>Sep 29, 2015, 9:12 PM</small></h4>
+          <p>Keep up the GREAT work! I am cheering for you!! Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+        </div>
+        <div class="col-sm-2 text-center">
+          <img src="images/designlogo3.png" class="img-circle" height="65" width="65" alt="Avatar">
+        </div>
+        <div class="col-sm-10">
+          <h4>John Row <small>Sep 25, 2015, 8:25 PM</small></h4>
+          <p>I am so happy for you man! Finally. I am looking forward to read about your trendy life. Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <br>
+          <p><span class="badge">1</span> Comment:</p><br>
+          <div class="row">
+            <div class="col-sm-2 text-center">
+              <img src="images/loginmanimg1.png" class="img-circle" height="65" width="65" alt="Avatar">
+            </div>
+            <div class="col-xs-10">
+              <h4>Nested Bro <small>Sep 25, 2015, 8:28 PM</small></h4>
+              <p>Me too! WOW!</p>
+              <br>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<footer class="container-fluid">
+  <p>Ynot? - All Rights Reserved. 2016</p>
+</footer>
+<section>
+</body>
+</html>
